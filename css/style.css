@@ -88,7 +88,7 @@ img {
 
 .btn {
   font-family: var(--fuente1);
-  background-color: var(--negro);
+  background-color: var(--gris);
 
   display: block;
   letter-spacing: 0.2rem;
@@ -96,7 +96,7 @@ img {
   color: var(--amarillo1);
   text-transform: uppercase;
   font-weight: bold;
-  padding: 0.5rem;
+  padding: 1.5rem;
   transition: background-color 0.3s ease-out;
   text-align: center;
   border: 1px solid var(--amarillo1);
