@@ -213,12 +213,12 @@ button:hover::before {
   margin: 0;
   padding: 1rem;
   background-image: url(../img/headerwave4.svg);
-  background: rgb(51, 255, 0);
+  background: rgb(0, 51, 255);
   background: linear-gradient(
     90deg,
-    #0033ffea 17%,
+    rgba(0, 51, 255, 0.7595413165266106) 17%,
     rgba(237, 255, 73, 0.8883928571428571) 53%,
-    #ff0303dc 87%
+    rgba(51, 255, 0, 0.6699054621848739) 87%
   );
 }
 .site-header h3 {
@@ -660,13 +660,21 @@ div.header__logo {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
+.novedades_cards {
+}
 .galeria img {
-  border: 2px solid var(--verdecata);
+  border: 2px solid var(--rojo);
   border-radius: 10px;
   max-height: 40rem;
   max-width: 100%;
   object-fit: cover;
+  transition: all 0.75s;
+}
+.galeria img:hover {
+  transform: scale(1.03);
+  transition: all 0.75s;
+  box-shadow: 1px 1px 7px var(--rojo), 1px 1px 7px var(--rojo),
+    1px 1px 7px var(--amarillo1);
 }
 
 /** sobre nosotros pag**/
