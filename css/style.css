@@ -86,9 +86,9 @@ img {
 
 /* BOTONES */
 
-.btn {
+.btn1 {
   font-family: var(--fuente1);
-  background-color: var(--gris);
+  background-color: var(--negro);
 
   display: block;
   letter-spacing: 0.2rem;
@@ -96,20 +96,21 @@ img {
   color: var(--amarillo1);
   text-transform: uppercase;
   font-weight: bold;
-  padding: 1.5rem;
+  padding: 1rem;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
   transition: background-color 0.3s ease-out;
   text-align: center;
-  border: 1px solid var(--amarillo1);
+  border: 1.5px solid var(--amarillo1);
   width: 100%;
   border-radius: 50px;
   text-shadow: 0 0 10px var(--verdeagua), 0 0 25px var(--verdeagua),
     0 0 50px var(--verdecata);
   transition-delay: 0.2s;
 }
-.btn:hover {
-  border: 1px solid var(--verdeagua);
+.btn1:hover {
+  border: 1.5px solid var(--verdeagua);
   cursor: pointer;
-
   color: var(--verdeagua);
   transition: color 0.3s ease-out;
   text-shadow: 0 0 10px var(--verdeagua), 0 0 25px var(--verdeagua),
@@ -122,7 +123,7 @@ img {
 span.texto_boton {
 }
 @media (min-width: 768px) {
-  .btn {
+  .btn1 {
     width: auto;
   }
 }
@@ -216,8 +217,8 @@ button:hover::before {
   background: rgb(0, 51, 255);
   background: linear-gradient(
     90deg,
-    rgba(0, 51, 255, 0.7595413165266106) 17%,
-    rgba(237, 255, 73, 0.8883928571428571) 53%,
+    rgba(237, 255, 73, 0.8883928571428571) 17%,
+    rgb(246, 246, 250) 53%,
     rgba(51, 255, 0, 0.6699054621848739) 87%
   );
 }
@@ -304,8 +305,8 @@ div.header__logo {
   margin: 0;
 }
 .imagen__logo {
-  width: 45rem;
-  height: 25rem;
+  width: 65rem;
+  height: 30rem;
 }
 
 /* BARRA DE NAVEGACION */
