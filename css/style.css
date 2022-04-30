@@ -147,7 +147,7 @@ button:hover::before {
 .nav-principal {
   text-transform: uppercase;
   font-family: var(--fuente1);
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--amarillo1);
   letter-spacing: 0.1rem;
   transition: color 0.3s ease-out;
@@ -299,31 +299,15 @@ button:hover::before {
 /** novedades **/
 
 .galeria {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  margin: 1rem;
 }
-@media (min-width: 390px) {
-  .galeria {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 768px) {
-  .galeria {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-.novedades_cards {
+.novedades_titulo {
+  font-size: 7rem;
 }
 .galeria img {
   border: 2px solid var(--rojo);
   border-radius: 10px;
-  max-height: 40rem;
-  max-width: 100%;
-  object-fit: cover;
+
   transition: all 0.75s;
 }
 .galeria img:hover {
