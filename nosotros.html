@@ -6,15 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Winy- Juegueteria e Importadora</title>
   <meta name="description" content="Juguetería e Importadora">
-  <link rel="prefetch" href="nosotros.html" as="document">
-  <link rel="preload" href="css/normalize.css" as="style">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mali:wght@300;400;700&display=swap"
     rel="stylesheet">
-
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/foco-1.svg">
@@ -22,145 +19,277 @@
 
 <body>
 
+  <!--Barra de navegacion-->
+
+  <nav class="nav-principal navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid justify-content-between">
+
+      <a class="mx-5" href="index.html">
+        <img class="img-fluid" src="img/winideflogo.svg" width="400" alt="winy logo">
+      </a>
+      <a class="navbar-brand d-md-none  fs-1 mx-5 fw-bold" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon me-3"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-center">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle nav_enlace" href="tienda.html" id="navbarDropdownMenuLink"
+                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tienda
+              </a>
+              <ul class="dropdown-menu nav-principal" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item nav_enlace" href="#">Jugueteria</a></li>
+                <li><a class="dropdown-item nav_enlace" href="#">Importados</a></li>
+                <li><a class="dropdown-item nav_enlace" href="#">Ofertas!</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav_enlace" href="novedades.html">novedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav_enlace" href="nosotros.html">Nosotros</a>
+            </li>
+
+            <li class="nav-item bg-light mx-2 p-3">
+              <a class="nav_enlace" aria-current="page" href="#"><img src="img/googlemapsicon-com.svg" alt="google maps"
+                  width="65"></a>
+            </li>
+            <li class="nav-item bg-light mx-2 p-3">
+              <a class="nav_enlace" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
+                  src="img/iconface.svg" alt="icono de face" width="65"></a>
+            </li>
+            <li class="nav-item bg-light mx-2 p-3">
+              <a class="nav_enlace" href="#"><img src="img/instaicon.svg" alt="Instagram" width="65"></a>
+            </li>
+          </ul>
+      </div>
+
+      <!--carrito-->
+      <div class="d-none d-lg-block me-5 d-flex row">
+        <img width="60" height="60" src="img/cartagrega.svg" alt="">
+        <p class="text-dark">$x0.xx</p>
+      </div>
+    </div>
+    </div>
+  </nav>
+  <!--fin barra navegacion-->
+
+  <!--Comienzo header-->
+  <header class="header container-fluid bg-dark">
+    <div class="row shadow-sm">
+
+      <div class="col-md-4 d-flex align-items-center">
+        <div class="offcanvas offcanvas-start" id="demo10">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">CONTACTANOS!</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+
+          <div class="offcanvas-body bg-dark">
+            <div class="d-flex flex-column align-items-center my-3">
+              <a class="nav_enlace my-4" href="https://api.whatsapp.com/send?phone=00542612189307&text=Hola!"><img
+                  src="img/whapph1.svg" alt="whatsapp" width="65"></a>
+              <a class="nav_enlace my-4" href="#"><img src="img/mesanger.svg" alt="messanger" width="65"></a>
+              <a class="nav_enlace my-4" href="contacto.html"><img src="img/gmail.svg" alt="gmail" width="65"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid my-3 d-flex  justify-content-center">
+          <button class="p-2" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
+            <img width="50" src="img/suport.svg" alt="suport"><span>Contacto</span>
+          </button>
+        </div>
 
 
-  <header class="site-header">
-    <div class="grid-header contenedor">
-      <div class="header__logo">
-        <a class="enlace__logo" href="index.html">
-          <img class="imagen__logo" src="img/winylogo2.svg" alt="winy logo">
-        </a>
+
 
       </div>
 
-      <div class="header__menu">
+      <div class="col-md-8 d-flex align-items-center">
 
-        <nav class="header__navegacion">
+        <form class="flex-grow-1 d-none d-md-block me-3">
 
-          <a class="btn1" href=" #"><img src="img/googlemapsicon-com.svg" alt="google maps" width="40" height="40"></a>
-          <a class="btn1" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
-              src="img/iconface.svg" alt="icono de face" width="40" height="40"></a>
-          <a class="btn1" href="https://api.whatsapp.com/send?phone=00542612189307&text=Hola!"><img
-              src="img/whapph1.svg" alt="whatsapp" width="40" height="40"></a>
-          <a class="btn1" href="#"><img src="img/instaicon.svg" alt="Instagram" width="40" height="40"></a>
-        </nav>
-        <a class="btn1" href="contacto.html">
-
-          <span class="texto_boton">contacto</span>
-
-        </a>
-
-        <div>
-
-
+          <input type="search" class="form-control border border-warning bg-light fs-1 text-center rounded-pill"
+            placeholder="¿Que buscas?">
+        </form>
+        <button class="ms-2 d-none d-md-block" type="button">
+          <img width="50" src="img/cartlupa.svg" alt="suport"><span>BUSCAR</span>
+        </button>
+      </div>
   </header>
+  <main class="container-xl">
+    <h1 class="text-center animate__heartBeat py-5">Sobre Nosotros</h1>
 
-  <div class="contenedor-navegacion">
-    <nav class="nav-principal contenedor">
-      <a class="nav_enlace" href="index.html">Inicio</a>
-      <a class="nav_enlace" href="tienda.html">Tienda</a>
-      <a class="nav_enlace" href="novedades.html">novedades</a>
-      <a class="nav_enlace" href="nosotros.html">Nosotros</a>
+    <div class="row nosotros">
 
-    </nav>
-  </div>
+      <div class="col-md-5 text-center">
 
+        <img class="img-fluid" src="img/winideflogo.svg" alt="Imagen nosotros">
+        <h2 class="fs-1">Juguetería e importados</h2>
 
-  <main class="contenido-principal contenedor ">
-    <h1 class="centrar-texto animate__heartBeat">Sobre Nosotros</h1>
-
-    <div class="contenido-nosotros">
-      <div class="imagen">
-        <img src="img/winylogo2.svg" alt="Imagen nosotros">
       </div>
-      <div class="informacion-nosotros">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis quis consectetur animi beatae
-          mollitia
-          itaque ea dicta eos. Totam repellat temporibus autem aspernatur necessitatibus perspiciatis ea iste laborum
-          ipsum!</p>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis quis consectetur animi beatae
-          mollitia
-          itaque ea dicta eos. Totam repellat temporibus autem aspernatur necessitatibus perspiciatis ea iste laborum
-          ipsum!</p>
+      <div class="col-md-6">
+
+        <p class="fs-3 caracteristicas-nosotros">
+          En <span class="fw-bold fs-1">WINY</span>,Somos una empresa familiar con amplia trayectoria
+          comercial,enfocados en adquirir la mayor variedad de
+          productos tales como juguetes,articulos importados,regaleria,ferreteria,entre otros!.</p>
+
+        <p class="fs-3">Queremos ofrecerte una experiencia pensada en que puedas encontrar:
+
+        <ul class=" ms-5 fs-2 fw-bold caracteristicas-nosotros">
+          <li>Productos de calidad y con una gran variedad</li>
+          <li>Soluciones en el menor tiempo y al mejor precio.</li>
+          <li>Con atención personalizada y asesoraramiento.</li>
+          <li>Fácil!,sin complicaciones.</li>
+        </ul>
       </div>
     </div>
-    <div class="contenido-nosotros">
-      <div class="imagen">
-        <img src="img/caratulaprueba.svg" alt="Imagen nosotros">
-      </div>
-      <div class="imagen">
-        <img src="img/afeitadora.jpg" alt="Imagen nosotros">
-      </div>
-      <div class="imagen">
-        <img src="img/novedades2.png" alt="Imagen nosotros">
+    <div class="container-xl rounded-pill d-none d-md-block d-lg-block my-4 bg-dark p-2 d-flex justify-content-center">
+      <div class="row align-items-center d-flex justify-content-center">
+
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <img width="140" class="img-fluid" src="img/cartok.svg" alt="variedad y calidad">
+        </div>
+        <div class="col-md-4  d-flex justify-content-center mt-3">
+          <img width="140" class="img-fluid" src="img/cartseg.svg" alt="compra segura">
+        </div>
+        <div class="col-md-4  d-flex justify-content-center">
+          <img width="140" class="img-fluid" src="img/cartredes.svg" alt="multiplataforma">
+        </div>
+
       </div>
     </div>
-    <div class="map-responsive">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.4758369255815!2d-68.84530768451404!3d-32.8855852809394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091c5c827a03%3A0x740e18608d18ad25!2sJugueteria%20e%20importadora%20winy!5e0!3m2!1ses-419!2sar!4v1650290646520!5m2!1ses-419!2sar"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <div class="container-xl p-2 nosotros-mapa">
+      <div class="row ">
+
+        <div class="col-md-6 d-flex align-items-center justify-content-center mb-3">
+          <img class="img-fluid " width="200" src="img/googlemapsicon-com.svg" alt="Imagen nosotros">
+        </div>
+        <div class="col-md-6 mt-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.4758369255815!2d-68.84530768451404!3d-32.8855852809394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e091c5c827a03%3A0x740e18608d18ad25!2sJugueteria%20e%20importadora%20winy!5e0!3m2!1ses-419!2sar!4v1650290646520!5m2!1ses-419!2sar"
+            style="border:0;" width="550" height="450" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
 
-
-    <div class="contenido-nosotros">
-
-      <div class="informacion-nosotros">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis quis consectetur animi beatae
-          mollitia
-          itaque ea dicta eos. Totam repellat temporibus autem aspernatur necessitatibus perspiciatis ea iste laborum
-          ipsum!</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores debitis quis consectetur animi beatae
-          mollitia
-          itaque ea dicta eos. Totam repellat temporibus autem aspernatur necessitatibus perspiciatis ea iste laborum
-          ipsum!</p>
+    <div
+      class="container-fluid rounded-pill d-none d-md-block d-lg-block mt-5 bg-light p-2 d-flex justify-content-center">
+      <div class="row align-items-center d-flex justify-content-center">
+        <div class="col-md-3  d-flex justify-content-center">
+          <img width="140" class="img-fluid" src="img/whapph1.svg" alt="whatsapp">
+        </div>
+        <div class="col-md-3 mb-2 d-flex justify-content-center">
+          <img width="140" class="img-fluid" src="img/mesanger.svg" alt="mensajero facebook">
+        </div>
+        <div class="col-md-3  d-flex justify-content-center">
+          <img width="140" class="img-fluid" src="img/iconface.svg" alt="mensajero facebook">
+        </div>
+        <div class="col-md-3  d-flex justify-content-center mt-3">
+          <img width="140" class="img-fluid" src="img/instaicon.svg" alt="Instagram">
+        </div>
       </div>
     </div>
   </main>
-  <footer class="site-footer">
-    <div class="grid-footer contenedor">
 
-      <div>
-        <h3>¿quienes somos?</h3>
-        <nav class="footer-menu">
-          <a class="footer_icono" href=" #"><img src="img/googlemapsicon-com.svg" alt="google maps" width="39"
-              height="39"></a>
-          <a class="footer_icono" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
-              src="img/iconface.svg" alt="icono de face" width="40" height="40"></a>
-          <a class="footer_icono" href="https://api.whatsapp.com/send?phone=00542612189307&text=Hola!"><img
-              src="img/whapph1.svg" alt="whatsapp" width="45" height="47"></a>
-          <a class="footer_icono" href="#"><img src="img/instaicon.svg" alt="Instagram" width="40" height="39"></a>
+  <!--comienzo Foooter-->
 
-        </nav>
+  <footer class="pt-5 mt-5 site-footer">
+    <div class="container-xl mt-5">
+      <div class="row">
+
+        <!--COLUMNA 1-->
+
+        <div class="col-md-4 mb-4 mb-md-0 text-center">
+          <nav class="d-flex flex-column footer-menu">
+            <a class="mx-5" href="index.html">
+              <img class="img-fluid" src="img/winideflogo.svg" width="450" alt="winy logo">
+            </a>
+          </nav>
+        </div>
+
+        <!--COLUMNA 2 -->
+
+        <div class="col-md-4 mb-4 mb-md-0 text-center">
+          <nav class="d-flex flex-column footer-menu">
+
+            <!--Boton 1-->
+
+            <div class="offcanvas offcanvas-start" id="demo10">
+              <div class="offcanvas-header">
+                <h1 class="offcanvas-title">CONTACTANOS!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+
+              <div class="offcanvas-body bg-dark">
+                <div class="d-flex flex-column align-items-center my-3">
+                  <a class="nav_enlace my-4" href="https://api.whatsapp.com/send?phone=00542612189307&text=Hola!"><img
+                      src="img/whapph1.svg" alt="whatsapp" width="65"></a>
+                  <a class="nav_enlace my-4" href="#"><img src="img/mesanger.svg" alt="messanger" width="65"></a>
+                  <a class="nav_enlace my-4" href="contacto.html"><img src="img/gmail.svg" alt="gmail" width="65"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid my-3 d-flex  justify-content-center">
+
+              <button class="p-2" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
+                <img width="50" src="img/suport.svg" alt="suport"><span>Contacto</span>
+              </button>
+            </div>
+
+            <!--BOTON 2-->
+
+            <div class="offcanvas offcanvas-start" id="demo1">
+              <div class="offcanvas-header">
+                <h1 class="offcanvas-title ms-5">Soporte</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+              </div>
+
+              <div class="offcanvas-body bg-dark">
+                <a class="fs-1 mt-4 ms-4" href="#">Preguntas Frecuentes</a>
+                <a class="fs-1 mt-4 ms-4" href="#"> Seguridad y Confianza</a>
+                <a class="fs-1 mt-4 ms-4" href="#">Política de Privacidad</a>
+                <a class="fs-1 mt-4 ms-4" href="#">Términos del Servicio</a>
+              </div>
+            </div>
+
+            <div class="container-fluid mt-3">
+              <button class="mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1">
+                <img width="50" src="img/preguntas.svg" alt="ayuda"><span> Soporte
+                </span></button>
+            </div>
+          </nav>
+        </div>
+
+        <!--COLUMNA 3-->
+
+        <div class="col-md-4 mb-4 mb-md-0 text-center">
+          <h3 class="mb-4 text-center">Categorías</h3>
+          <nav class="d-flex flex-column footer-menu align-items-center">
+            <a class="fs-1" href="#">Juegueteria</a>
+            <a class="fs-1" href="#">Importados</a>
+            <a class="fs-1" href="#">Ofertas</a>
+          </nav>
+        </div>
+
       </div>
-      <div>
-        <h3>Soporte</h3>
-        <nav class="footer-menu">
-          <a href="#">Preguntas Frecuentes</a>
-          <a href="#"> Seguridad y Confianza</a>
-          <a href="#">Política de Privacidad</a>
-          <a href="#">Términos del Servicio</a>
-        </nav>
-      </div>
+      <!--Fin "row"-->
 
-      <div>
-        <h3>Categorías</h3>
-
-        <nav class="footer-menu">
-          <a href="#">Juegueteria</a>
-          <a href="#">Importados</a>
-          <a href="#">Ofertas</a>
-        </nav>
-      </div>
-    </div>
-
-    <p class="copyright">Todos los derechos Reservados <span> - www.winy.com ® -</span></p>
+      <!--Copyright-->
+      <p class="copyright"> ® Todos los derechos Reservados <span> www.winy.com </span></p>
   </footer>
 
 
-  <script src=""></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
