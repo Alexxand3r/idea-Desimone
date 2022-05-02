@@ -291,7 +291,7 @@ button:hover::before {
 /** novedades **/
 
 .novedades_titulo {
-  font-size: 7rem;
+  font-size: 5.5rem;
   text-transform: uppercase;
   color: var(--azul1);
 }
@@ -431,4 +431,8 @@ button:hover::before {
 }
 .copyright span {
   color: var(--verdecata);
+}
+
+.cursor {
+  cursor: pointer;
 }

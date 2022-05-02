@@ -57,19 +57,99 @@
               <a class="nav_enlace" href="nosotros.html">Nosotros</a>
             </li>
             <div>
-              <a class="nav_enlace" aria-current="page" href="#"><img src="img/googlemapsicon-com.svg" alt="google maps"
-                  width="45"></a>
+              <!--icono face-->
               <a class="nav_enlace" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
                   src="img/iconface.svg" alt="icono de face" width="45"></a>
-              <a class="nav_enlace" href="#"><img src="img/instaicon.svg" alt="Instagram" width="45"></a>
-            </div>
-          </ul>
-      </div>
+              <!--icono instagram-->
 
-      <div class="d-none d-lg-block me-5 d-flex row">
-        <img width="60" height="60" src="img/cartagrega.svg" alt="">
-        <p class="text-dark">$x0.xx</p>
+              <a class="nav_enlace" href="#"><img src="img/instaicon.svg" alt="Instagram" width="45"></a>
+
+              <!--icono sugerencia-->
+
+              <a class="nav_enlace my-4" data-bs-toggle="modal" data-bs-target="#modal"><img src="img/sugerencia.svg"
+                  alt="gmail" width="55"></a>
+
+              <!-- Modal formulario -->
+
+              <div id="modal" class="modal fade">
+                <div class="modal-dialog border border-warning">
+                  <div class="modal-content border border-warning">
+                    <div class="modal-header bg-dark border border-warning">
+                      <h2 class="modal-title fs-1">Sugerencias</h2>
+                      <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                    </div>
+
+                    <div class="modal-body border border-warning">
+                      <form>
+                        <div class="row justify-content-center border border-warning">
+                          <form class="col-md-8 needs-validation" novalidate>
+                            <fieldset class="bg-dark">
+                              <div class="mb-3">
+                                <label class="form-label formulario-etiqueta" for="nombre">Nombre:</label>
+                                <input type="text" class="form-control rounded-pill formulario-input" id="nombre"
+                                  placeholder="Tu Nombre" required>
+                                <span class="invalid-feedback">Hubo un error...</span>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label formulario-etiqueta" for="asunto">Asunto:</label>
+                                <input type="text" class="form-control rounded-pill formulario-input" id="asunto"
+                                  placeholder="Tu Asunto">
+                                <span class="valid-feedback">Muy bien!!</span>
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label formulario-etiqueta" for="email">Email:</label>
+                                <input type="email" class="form-control rounded-pill formulario-input" id="email"
+                                  placeholder="Tu Email">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label formulario-etiqueta" for="tel">Teléfono:</label>
+                                <input type="tel" class="form-control rounded-pill formulario-input" id="tel"
+                                  placeholder="Tu Teléfono">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label formulario-etiqueta" for="provincia">Provincia:</label>
+                                <select class="form-control rounded-pill formulario-input" id="pais">
+                                  <option value="">--Seleccione--</option>
+                                  <option value="MDZ">Mendoza</option>
+                                  <option value="COR">Cordoba</option>
+                                  <option value="SJ">San Juan</option>
+                                </select>
+                              </div>
+                              <div class="my-3">
+                                <label class="form-label" for="cliente">Cliente:</label>
+                                <input name="tipo" type="radio" class="form-check-input" id="cliente">
+                              </div>
+                              <div class="mb-3">
+                                <label class="form-label" for="proveedor">Proveedor:</label>
+                                <input name="tipo" type="radio" class="form-check-input" id="proveedor">
+                              </div>
+
+                              <div class="mb-3">
+                                <label class="form-label formulario-etiqueta" for="tel">Mensaje:</label>
+                                <textarea class="form-control formulario-input" rows="5"></textarea>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button data-bs-dismiss="modal" type="submit" class="fs-2 px-5 mt-5"><span>Enviar!</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
       </div>
+      </ul>
+    </div>
+
+    <!--zona carrito-->
+    <div class="d-none d-lg-block me-5 d-flex row">
+      <img width="60" height="60" src="img/cartagrega.svg" alt="">
+      <p class="text-dark">$x0.xx</p>
+    </div>
     </div>
   </nav>
   <!--fin barra navegacion-->
@@ -86,10 +166,14 @@
 
           <div class="offcanvas-body bg-dark">
             <div class="d-flex flex-column align-items-center my-3">
-              <a class="nav_enlace my-4" href="https://api.whatsapp.com/send?phone=00542612189307&text=Hola!"><img
+              <a class="nav_enlace my-5" href="https://api.whatsapp.com/send?phone=00542612189307&text=Hola!"><img
                   src="img/whapph1.svg" alt="whatsapp" width="65"></a>
-              <a class="nav_enlace my-4" href="#"><img src="img/mesanger.svg" alt="messanger" width="65"></a>
-              <a class="nav_enlace my-4" href="contacto.html"><img src="img/gmail.svg" alt="gmail" width="65"></a>
+              <a class="nav_enlace mb-4" href="#"><img src="img/mesanger.svg" alt="messanger" width="65"></a>
+              <a class="nav_enlace mt-3" aria-current="page"
+                href="https://www.google.com.ar/maps/place/Winy+Jugueter%C3%ADa+e+importados/@-32.8855853,-68.8453077,17z/data=!3m1!4b1!4m5!3m4!1s0x967e091c5c827a03:0x740e18608d18ad25!8m2!3d-32.8855853!4d-68.843119"><img
+                  src="img/googlemapsicon-com.svg" alt="google maps" width="65"></a>
+              <a class="nav_enlace mt-5" data-bs-toggle="modal" data-bs-target="#modal"><img src="img/sugerencia.svg"
+                  alt="sugerencia" width="70"></a>
             </div>
           </div>
         </div>
@@ -111,6 +195,7 @@
         </button>
       </div>
   </header>
+  <!--Fin header-->
   <!-- seccion nosotros -->
 
   <main class="container-xl">
@@ -230,6 +315,9 @@
                       src="img/whapph1.svg" alt="whatsapp" width="65"></a>
                   <a class="nav_enlace my-4" href="#"><img src="img/mesanger.svg" alt="messanger" width="65"></a>
                   <a class="nav_enlace my-4" href="contacto.html"><img src="img/gmail.svg" alt="gmail" width="65"></a>
+                  <a class="p-2 mt-3 cursor" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
+                    <img class="cursor" width="65" src="img/suport.svg" alt="suport"><span>Contacto</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -237,7 +325,7 @@
             <div class="container-fluid my-3 d-flex  justify-content-center">
 
               <button class="p-2 mt-3" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
-                <img width="40" src="img/suport.svg" alt="suport"><span>Contacto</span>
+                <img width="65" src="img/suport.svg" alt="suport"><span>Contacto</span>
               </button>
             </div>
 
@@ -271,8 +359,9 @@
               <img class="img-fluid" src="img/winideflogo.svg" width="450" alt="winy logo">
             </a>
             <div class="d-flex justify-content-center">
-              <a class="nav_enlace" aria-current="page" href="#"><img src="img/googlemapsicon-com.svg" alt="google maps"
-                  width="45"></a>
+              <a class="nav_enlace" aria-current="page"
+                href="https://www.google.com.ar/maps/place/Winy+Jugueter%C3%ADa+e+importados/@-32.8855853,-68.8453077,17z/data=!3m1!4b1!4m5!3m4!1s0x967e091c5c827a03:0x740e18608d18ad25!8m2!3d-32.8855853!4d-68.843119"><img
+                  src="img/googlemapsicon-com.svg" alt="google maps" width="45"></a>
               <a class="nav_enlace" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
                   src="img/iconface.svg" alt="icono de face" width="45"></a>
               <a class="nav_enlace" href="#"><img src="img/instaicon.svg" alt="Instagram" width="45"></a>
