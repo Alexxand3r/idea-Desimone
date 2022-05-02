@@ -113,90 +113,79 @@
   </header>
 
 
-  <main class="contenido-principal contenedor ">
-    <h1 class="centrar-texto animate__jackIn animate__heartBeat TheBox animate__zoomIn">Contacto</h1>
+  <!--area-->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Ver Formulario</button>
 
-    <form class="formulario">
-      <fieldset>
-        <legend>Tus Datos</legend>
 
-        <div class="campo">
-          <label for="nombre">Nombre: </label>
-          <input id="nombre" type="text" placeholder="Tu Nombre" required>
+  <!-- Modal -->
+
+  <div id="modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title">Sugerencias!</h2>
+          <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
         </div>
 
-        <div class="campo">
-          <label for="asunto">Asunto:</label>
-          <input id="asunto" type="text" placeholder="Tu Asunto" required>
+        <div class="modal-body">
+          <form>
+            <div class="row justify-content-center">
+              <form class="col-md-8 needs-validation" novalidate>
+                <fieldset class="bg-dark">
+                  <div class="mb-3">
+                    <label class="form-label formulario-etiqueta" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control rounded-pill formulario-input" id="nombre"
+                      placeholder="Tu Nombre" required>
+                    <span class="invalid-feedback">Hubo un error...</span>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="asunto">Asunto:</label>
+                    <input type="text" class="form-control" id="asunto" placeholder="Tu Asunto">
+                    <span class="valid-feedback">Muy bien!!</span>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Tu Email">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="tel">Teléfono:</label>
+                    <input type="tel" class="form-control" id="tel" placeholder="Tu Teléfono">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="provincia">Provincia:</label>
+                    <select class="form-control" id="pais">
+                      <option value="">--Seleccione--</option>
+                      <option value="MDZ">Mendoza</option>
+                      <option value="COR">Cordoba</option>
+                      <option value="SJ">San Juan</option>
+                    </select>
+                  </div>
+                  <div class="my-3">
+                    <label class="form-label" for="cliente">Cliente:</label>
+                    <input name="tipo" type="radio" class="form-check-input" id="cliente">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="proveedor">Proveedor:</label>
+                    <input name="tipo" type="radio" class="form-check-input" id="proveedor">
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label" for="tel">Mensaje:</label>
+                    <textarea class="form-control" rows="5"></textarea>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </form>
         </div>
 
-        <div class="campo">
-          <label for="email">E-mail:</label>
-          <input id="email" type="email" placeholder="Tu Email">
+        <div class="modal-footer">
+          <button data-bs-dismiss="modal" type="submit" class="fs-2 px-5 mt-5"><span>Enviar!</span></button>
         </div>
-
-        <div class="campo">
-          <label for="tel">Teléfono:</label>
-          <input id="tel" type="tel" placeholder="Tu Teléfono">
-        </div>
-
-        <div class="campo">
-          <label for="tel">Mensaje:</label>
-          <textarea rows="10" cols="20"></textarea>
-        </div>
-
-      </fieldset>
-
-      <fieldset>
-        <legend>País</legend>
-
-        <div class="campo">
-          <label for="pais">País</label>
-          <select id="pais">
-            <option value="">-- Seleccione -- </option>
-            <option value="MX">México</option>
-            <option value="PR">Perú</option>
-            <option value="CO">Colombia</option>
-            <option value="AR">Argentina</option>
-            <option value="ES">España</option>
-            <option value="CL">Chile</option>
-          </select>
-
-        </div>
-
-      </fieldset>
-
-      <fieldset>
-        <legend>Información Extra</legend>
-
-        <div class="campo">
-          <label for="cliente">Cliente</label>
-          <input id="cliente" type="radio" name="tipo" value="cliente">
-        </div>
-
-        <div class="campo">
-          <label for="proveedor">Proveedor</label>
-          <input id="proveedor" type="radio" name="tipo" value="proveedor">
-        </div>
-
-        <div class="campo">
-          <label for="categoria">Categoría de Interés</label>
-          <input list="categorias" name="categorias">
-          <datalist id="categorias">
-            <option value="Cocina">
-            <option value="Exterior">
-            <option value="Recamaras">
-            <option value="Oficina">
-            <option value="Televisión">
-          </datalist>
-        </div>
-
-      </fieldset>
-      <button type="submit" class="margin-y" value="Enviar Formulario"> <span>enviar formulario</span></button>
-    </form>
-
-  </main>
-
+      </div>
+    </div>
+  </div>
+  </div>
   <!--comienzo Foooter-->
 
   <footer class="site-footer">
