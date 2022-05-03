@@ -172,6 +172,10 @@ button:hover::before {
 
 /* grid destacados */
 
+.destacado__body {
+  background-color: var(--negro);
+}
+
 .destacado__descripcion {
   font-size: 1.8rem;
   font-family: var(--fuente2);
