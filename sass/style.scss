@@ -291,16 +291,15 @@ button:hover::before {
 }
 
 /** sobre nosotros pag**/
-
+.nosotros-titulo {
+  font-size: 5rem;
+}
 .nosotros {
   border: 2px solid $amarillo;
   border-radius: 50px;
   padding: 1rem;
 }
 
-.nosotros-titulo {
-  font-size: 5rem;
-}
 .nosotros-mapa {
   border: 2px solid $verdecata;
   height: 100%;
@@ -355,12 +354,13 @@ button:hover::before {
   border-top: 3px solid $verdecata;
   border-bottom: 3px solid $amarillo;
   background-color: $negro;
+  h3 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: $verdecata;
+  }
 }
-.site-footer h3 {
-  font-size: 3.5rem;
-  text-align: center;
-  color: $verdecata;
-}
+
 @media (min-width: 768px) {
   .site-footer h3 {
     text-align: left;
