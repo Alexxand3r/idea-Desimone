@@ -1,0 +1,19 @@
+@use "../custom" as *;
+@use "../utilidades/mixins";
+
+/** sobre nosotros pag**/
+.nosotros-titulo {
+  font-size: 5rem;
+}
+.nosotros {
+  border: 2px solid $amarillo;
+  border-radius: 50px;
+  padding: 1rem;
+}
+
+.nosotros-mapa {
+  border: 2px solid $verdecata;
+  height: 100%;
+
+  padding: 1rem;
+}

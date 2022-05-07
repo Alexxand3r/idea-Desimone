@@ -1,0 +1,35 @@
+@use "../custom" as *;
+
+/** Listado de Productos-principal **/
+
+.destacado {
+  background-color: $negro;
+  text-align: center;
+
+  h2 {
+    font-size: 4.5rem;
+    color: $amarillo;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-size: 3rem;
+    color: $verdecata;
+  }
+  .destacado__descripcion {
+    font-size: 1.8rem;
+    font-family: $fuente2;
+    color: $amarillo;
+  }
+
+  .destacado__precio {
+    color: $verdecata;
+    font-weight: bold;
+    font-family: $fuente1;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+  }
+  .destacado__precio::first-letter {
+    font-size: 4rem;
+    color: $verdeagua;
+  }
+}

@@ -1,0 +1,45 @@
+@use "../custom" as *;
+@use "../utilidades/mixins";
+
+/* BARRA DE NAVEGACION */
+
+.boton-nav {
+  margin-left: 1.2rem;
+  margin-top: 1rem;
+}
+.nav-principal {
+  text-transform: uppercase;
+  font-family: $fuente1;
+  font-size: 3rem;
+  color: $amarillo;
+  letter-spacing: 0.1rem;
+  transition: color 0.3s ease-out;
+}
+.nav_enlace {
+  color: $negro;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  transition-delay: 0.1s;
+  &:hover {
+    transition-delay: 0.5s;
+    transition: all 0.55s;
+    color: $negro;
+    transition: color 0.3s ease-out;
+    text-shadow: 0 0 10px $verdecata, 0 0 25px $verdecata, 0 0 50px $verdeagua;
+    transition-delay: 0.2s;
+  }
+}
+
+/* Formulario */
+.formulario-etiqueta {
+  color: $amarillo;
+}
+
+.formulario-input {
+  border: 2px solid $verdeagua;
+}
+
+.form-control {
+  padding: 1rem;
+  font-size: 1.6rem;
+}

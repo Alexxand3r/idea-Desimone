@@ -1,0 +1,47 @@
+@use "../custom" as *;
+
+/** OFERTA SEMANAL **/
+
+.titulo-semanal {
+  font-size: 5rem;
+  color: $azul;
+}
+
+.card-semanal {
+  border: 2px solid $verdecata;
+  border-bottom-right-radius: 3rem;
+  background-color: $negro;
+}
+
+.tagline-semanal {
+  font-family: $fuente1;
+  font-size: 4.5rem;
+  color: $amarillo;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+.producto-semanal {
+  color: $verdecata;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.descripcion-semanal {
+  color: $amarillo;
+}
+.precio-semanal {
+  font-family: $fuente1;
+  font-size: 4rem;
+  color: $verdecata;
+  margin: 0;
+  letter-spacing: 2.5px;
+}
+
+.precio-semanal::first-letter {
+  color: var(--verdeagua);
+  font-size: $separacion;
+}
+.imagen-semanal {
+  border: 2px solid $amarillo;
+  border-top-left-radius: 3rem;
+  padding: 1rem;
+}

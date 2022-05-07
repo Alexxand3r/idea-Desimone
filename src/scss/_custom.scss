@@ -1,0 +1,63 @@
+//Paleta
+
+$blanco: #fff;
+$negro: #000000;
+$gris: #252424e9;
+$rojo: #ff0303;
+$amarillo: #edff49;
+$verdeagua: #33ff80;
+$verdecata: #33ff00;
+$naranja: #ebaf09;
+$azul: #0033ff;
+$violeta: #8a2be2;
+$rosa: #ff1493;
+
+// Reescribir Variables de Bootstrap
+// Asignar paleta de colores a BS
+$secondary: $verdeagua;
+$dark: $negro;
+$primary: $azul;
+$danger: $rojo;
+$warning: $amarillo;
+
+//fuente
+$fuente1: "Luckiest Guy", cursive;
+$fuente2: "Mali", cursive;
+
+//utilidades
+
+$separacion: 5rem;
+
+//globales
+// Globales
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1 rem = 10px */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $fuente2;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $fuente1;
+}
+h1 {
+  color: $azul;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+}
+
+// Importar Boostrap
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

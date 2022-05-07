@@ -1,0 +1,29 @@
+@use "../custom" as *;
+@use "../utilidades/mixins";
+
+/** novedades **/
+
+.novedades_titulo {
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  color: $azul;
+}
+
+.novedades_modal {
+  border: 3px solid $azul;
+  background-color: $negro;
+}
+
+.galeria {
+  margin: 1rem;
+}
+.galeria img {
+  border: 2px solid $rojo;
+  border-radius: 10px;
+  transition: all 0.75s;
+}
+.galeria img:hover {
+  transform: scale(1.03);
+  transition: all 0.75s;
+  box-shadow: 1px 1px 7px $rojo, 1px 1px 7px $rojo, 1px 1px 7px $amarillo;
+}

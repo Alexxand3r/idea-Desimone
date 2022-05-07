@@ -1,0 +1,22 @@
+@use "../custom" as *;
+@use "../utilidades/mixins";
+
+/** jueguetes **/
+
+.juguetes {
+  border: 2px solid $verdecata;
+  border-radius: 10px;
+  margin-left: 1rem;
+}
+
+.juguetes_titulo {
+  font-size: 5rem;
+  color: $azul;
+}
+.juguetes img {
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+.juguetes img:hover {
+  transform: scale(1.2);
+}

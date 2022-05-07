@@ -1,0 +1,14 @@
+// inclusion de archivos
+
+@use "utilidades";
+@use "componentes";
+@use "header";
+@use "footer";
+@use "home";
+@use "paginternas";
+
+//Area
+
+a {
+  text-decoration: none;
+}
