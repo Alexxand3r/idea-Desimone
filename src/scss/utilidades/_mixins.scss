@@ -1,3 +1,11 @@
+@use "../custom" as *;
+
+@mixin telefono {
+  @media (min-width: $telefono) {
+    @content;
+  }
+}
+
 // mixin degrade imagen fondo.
 @mixin bgImage($url, $color) {
   background-image: linear-gradient(

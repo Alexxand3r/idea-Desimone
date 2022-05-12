@@ -2,7 +2,7 @@
 
 $blanco: #fff;
 $negro: #000000;
-$gris: #252424e9;
+$gris: #eceeef;
 $rojo: #ff0303;
 $amarillo: #edff49;
 $verdeagua: #33ff80;
@@ -13,6 +13,11 @@ $violeta: #8a2be2;
 $rosa: #ff1493;
 
 // Reescribir Variables de Bootstrap
+
+$headings-font-weight: 700;
+$font-size-root: 62.5%;
+$h1-font-size: 3.8rem;
+
 // Asignar paleta de colores a BS
 $secondary: $verdeagua;
 $dark: $negro;
@@ -24,11 +29,15 @@ $warning: $amarillo;
 $fuente1: "Luckiest Guy", cursive;
 $fuente2: "Mali", cursive;
 
+//Media Queries
+$telefono: 486px;
+$tablet: 768px;
+$desktop: 1024px;
+
 //utilidades
 
 $separacion: 5rem;
 
-//globales
 // Globales
 
 html {
@@ -54,7 +63,7 @@ h3 {
 }
 h1 {
   color: $azul;
-  font-size: 3.8rem;
+
   text-transform: uppercase;
 }
 

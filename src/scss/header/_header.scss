@@ -1,7 +1,11 @@
 @use "../custom" as *;
-@use "../utilidades/mixins";
+@use "utilidades/mixins";
 
 /* BARRA DE NAVEGACION */
+
+a {
+  text-decoration: none;
+}
 
 .boton-nav {
   margin-left: 1.2rem;
@@ -42,4 +46,18 @@
 .form-control {
   padding: 1rem;
   font-size: 1.6rem;
+}
+
+.hero {
+  @include mixins.bgImage("../img/negocio-hero.jpg", $gris);
+
+  .logo_hero {
+    max-width: 20rem;
+  }
+  .contenido_hero {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    h1 {
+    }
+  }
 }

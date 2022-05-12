@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Winy- Juegueteria e Importadora</title>
+  <title> Winy - Juegueteria e Importadora</title>
   <meta name="description" content="Juguetería e Importadora">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="build/css/style.css">
-  <link rel="icon" href="img/foco-1.svg">
+  <link rel="icon" href="build/img/foco-1.svg">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <div class="container-fluid justify-content-between">
 
       <a class="mx-5" href="index.html">
-        <img class="img-fluid" src="img/winideflogo.svg" width="400" alt="winy logo">
+        <img class="img-fluid" src="build/img/winideflogo.svg" width="400" alt="winy logo">
       </a>
       <a class="navbar-brand d-md-none  fs-1 mx-5 fw-bold" href="index.html">Inicio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -40,8 +40,8 @@
               <a class="nav_enlace" href="index.html">home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle nav_enlace" href="tienda.html" id="navbarDropdownMenuLink"
-                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle nav_enlace" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 Tienda
               </a>
               <ul class="dropdown-menu nav-principal" aria-labelledby="navbarDropdownMenuLink">
@@ -59,15 +59,14 @@
             <div>
               <!--icono face-->
               <a class="nav_enlace" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
-                  src="img/iconface.svg" alt="icono de face" width="45"></a>
-              <!--icono instagram-->
+                  src="build/img/iconface.svg" alt="icono de face" width="45"></a>
 
-              <a class="nav_enlace" href="#"><img src="img/instaicon.svg" alt="Instagram" width="45"></a>
+              <!--icono instagram-->
+              <a class="nav_enlace nav-item" href="#"><img src="build/img/instaicon.svg" alt="Instagram" width="45"></a>
 
               <!--icono sugerencia-->
-
-              <a class="nav_enlace my-4" data-bs-toggle="modal" data-bs-target="#modal"><img src="img/sugerencia.svg"
-                  alt="gmail" width="55"></a>
+              <a class="nav_enlace my-4" data-bs-toggle="modal" data-bs-target="#modal"><img
+                  src="build/img/sugerencia.svg" alt="gmail" width="55"></a>
 
               <!-- Modal formulario -->
 
@@ -147,7 +146,7 @@
 
     <!--zona carrito-->
     <div class="d-none d-lg-block me-5 d-flex row">
-      <img width="60" height="60" src="img/cartagrega.svg" alt="">
+      <img width="60" height="60" src="build/img/cartagrega.svg" alt="">
       <p class="text-dark">$x0.xx</p>
     </div>
     </div>
@@ -157,6 +156,7 @@
   <!--Comienzo header-->
   <header class="header container-fluid bg-dark">
     <div class="row shadow-sm">
+      <!--Boton contacto-->
       <div class="col-md-4 d-flex align-items-center">
         <div class="offcanvas offcanvas-start" id="demo10">
           <div class="offcanvas-header">
@@ -167,30 +167,30 @@
           <div class="offcanvas-body bg-dark">
             <div class="d-flex flex-column align-items-center my-3">
               <a class="nav_enlace my-5" href="https://api.whatsapp.com/send?phone=00542612189307&text=Hola!"><img
-                  src="img/whapph1.svg" alt="whatsapp" width="65"></a>
-              <a class="nav_enlace mb-4" href="#"><img src="img/mesanger.svg" alt="messanger" width="65"></a>
+                  src="build/img/whapph1.svg" alt="whatsapp" width="65"></a>
+              <a class="nav_enlace mb-4" href="#"><img src="build/img/mesanger.svg" alt="messanger" width="65"></a>
               <a class="nav_enlace mt-3" aria-current="page"
                 href="https://www.google.com.ar/maps/place/Winy+Jugueter%C3%ADa+e+importados/@-32.8855853,-68.8453077,17z/data=!3m1!4b1!4m5!3m4!1s0x967e091c5c827a03:0x740e18608d18ad25!8m2!3d-32.8855853!4d-68.843119"><img
-                  src="img/googlemapsicon-com.svg" alt="google maps" width="75"></a>
-
+                  src="build/img/googlemapsicon-com.svg" alt="google maps" width="75"></a>
             </div>
           </div>
         </div>
 
         <div class="container-fluid my-3 d-flex  justify-content-center">
           <button class="p-2" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
-            <img width="50" src="img/suport.svg" alt="suport"><span>Contacto</span>
+            <img width="50" src="build/img/suport.svg" alt="suport"><span>Contacto</span>
           </button>
         </div>
       </div>
 
+      <!-- barra de busqueda-->
       <div class="col-md-8 d-flex align-items-center">
         <form class="flex-grow-1 d-none d-md-block me-3">
           <input type="search" class="form-control border border-warning bg-light fs-1 text-center rounded-pill"
             placeholder="¿Que buscas?">
         </form>
         <button class="ms-2 d-none d-md-block" type="button">
-          <img width="50" src="img/cartlupa.svg" alt="suport"><span>BUSCAR</span>
+          <img width="50" src="build/img/cartlupa.svg" alt="suport"><span>BUSCAR</span>
         </button>
       </div>
   </header>
@@ -204,7 +204,7 @@
 
       <div class="col-md-5 text-center">
 
-        <img class="img-fluid" src="img/winideflogo.svg" alt="Imagen nosotros">
+        <img class="img-fluid" src="build/img/winideflogo.svg" alt="Imagen nosotros">
         <h2 class="fs-1">Juguetería e importados</h2>
 
       </div>
@@ -230,13 +230,13 @@
       <div class="row align-items-center d-flex justify-content-center">
 
         <div class="col-md-4 mb-2 d-flex justify-content-center">
-          <img width="140" class="img-fluid" src="img/cartok.svg" alt="variedad y calidad">
+          <img width="140" class="img-fluid" src="build/img/cartok.svg" alt="variedad y calidad">
         </div>
         <div class="col-md-4  d-flex justify-content-center mt-3">
-          <img width="140" class="img-fluid" src="img/cartseg.svg" alt="compra segura">
+          <img width="140" class="img-fluid" src="build/img/cartseg.svg" alt="compra segura">
         </div>
         <div class="col-md-4  d-flex justify-content-center">
-          <img width="140" class="img-fluid" src="img/cartredes.svg" alt="multiplataforma">
+          <img width="140" class="img-fluid" src="build/img/cartredes.svg" alt="multiplataforma">
         </div>
 
       </div>
@@ -246,7 +246,7 @@
       <div class="row ">
 
         <div class="col-md-6 d-flex align-items-center justify-content-center mb-3">
-          <img class="img-fluid " width="200" src="img/googlemapsicon-com.svg" alt="Imagen nosotros">
+          <img class="img-fluid " width="200" src="build/img/googlemapsicon-com.svg" alt="Imagen nosotros">
         </div>
         <div class="col-md-6 mt-1">
           <iframe class="embed-responsive-item"
@@ -263,16 +263,16 @@
       class="container-fluid rounded-pill d-none d-md-block d-lg-block my-5 bg-light p-2 d-flex justify-content-center">
       <div class="row align-items-center d-flex justify-content-center">
         <div class="col-md-3  d-flex justify-content-center">
-          <img width="140" class="img-fluid" src="img/whapph1.svg" alt="whatsapp">
+          <img width="140" class="img-fluid" src="build/img/whapph1.svg" alt="whatsapp">
         </div>
         <div class="col-md-3 mb-2 d-flex justify-content-center">
-          <img width="140" class="img-fluid" src="img/mesanger.svg" alt="mensajero facebook">
+          <img width="140" class="img-fluid" src="build/img/mesanger.svg" alt="mensajero facebook">
         </div>
         <div class="col-md-3  d-flex justify-content-center">
-          <img width="140" class="img-fluid" src="img/iconface.svg" alt="mensajero facebook">
+          <img width="140" class="img-fluid" src="build/img/iconface.svg" alt="mensajero facebook">
         </div>
         <div class="col-md-3  d-flex justify-content-center mt-3">
-          <img width="140" class="img-fluid" src="img/instaicon.svg" alt="Instagram">
+          <img width="140" class="img-fluid" src="build/img/instaicon.svg" alt="Instagram">
         </div>
       </div>
     </div>
@@ -311,11 +311,12 @@
               <div class="offcanvas-body bg-dark">
                 <div class="d-flex flex-column align-items-center my-3">
                   <a class="nav_enlace my-4" href="https://api.whatsapp.com/send?phone=00542612189307&text=Hola!"><img
-                      src="img/whapph1.svg" alt="whatsapp" width="65"></a>
-                  <a class="nav_enlace my-4" href="#"><img src="img/mesanger.svg" alt="messanger" width="65"></a>
-                  <a class="nav_enlace my-4" href="contacto.html"><img src="img/gmail.svg" alt="gmail" width="65"></a>
+                      src="build/img/whapph1.svg" alt="whatsapp" width="65"></a>
+                  <a class="nav_enlace my-4" href="#"><img src="build/img/mesanger.svg" alt="messanger" width="65"></a>
+                  <a class="nav_enlace my-4" href="contacto.html"><img src="build/img/gmail.svg" alt="gmail"
+                      width="65"></a>
                   <a class="p-2 mt-3 cursor" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
-                    <img class="cursor" width="45" src="img/suport.svg" alt="suport"><span>Contacto</span>
+                    <img class="cursor" width="45" src="build/img/suport.svg" alt="suport"><span>Contacto</span>
                   </a>
                 </div>
               </div>
@@ -324,7 +325,7 @@
             <div class="container-fluid my-3 d-flex  justify-content-center">
 
               <button class="p-2 mt-3" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
-                <img width="40" src="img/suport.svg" alt="suport"><span>Contacto</span>
+                <img width="40" src="build/img/suport.svg" alt="suport"><span>Contacto</span>
               </button>
             </div>
 
@@ -346,7 +347,7 @@
 
             <div class="container-fluid mt-3">
               <button class="mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo1">
-                <img width="40" src="img/preguntas.svg" alt="ayuda"><span> Soporte</span></button>
+                <img width="40" src="build/img/preguntas.svg" alt="ayuda"><span> Soporte</span></button>
             </div>
           </nav>
         </div>
@@ -355,15 +356,15 @@
         <div class="col-md-4 mb-4 mb-md-0 text-center ">
           <nav class="d-flex flex-column footer-menu">
             <a class="" href="index.html">
-              <img class="img-fluid" src="img/winideflogo.svg" width="450" alt="winy logo">
+              <img class="img-fluid" src="build/img/winideflogo.svg" width="450" alt="winy logo">
             </a>
             <div class="d-flex justify-content-center">
               <a class="nav_enlace" aria-current="page"
                 href="https://www.google.com.ar/maps/place/Winy+Jugueter%C3%ADa+e+importados/@-32.8855853,-68.8453077,17z/data=!3m1!4b1!4m5!3m4!1s0x967e091c5c827a03:0x740e18608d18ad25!8m2!3d-32.8855853!4d-68.843119"><img
-                  src="img/googlemapsicon-com.svg" alt="google maps" width="45"></a>
+                  src="build/img/googlemapsicon-com.svg" alt="google maps" width="45"></a>
               <a class="nav_enlace" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
-                  src="img/iconface.svg" alt="icono de face" width="45"></a>
-              <a class="nav_enlace" href="#"><img src="img/instaicon.svg" alt="Instagram" width="45"></a>
+                  src="build/img/iconface.svg" alt="icono de face" width="45"></a>
+              <a class="nav_enlace" href="#"><img src="build/img/instaicon.svg" alt="Instagram" width="45"></a>
             </div>
 
           </nav>

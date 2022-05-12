@@ -1,5 +1,5 @@
 // inclusion de archivos
-
+@use "custom";
 @use "utilidades";
 @use "componentes";
 @use "header";
@@ -8,7 +8,3 @@
 @use "paginternas";
 
 //Area
-
-a {
-  text-decoration: none;
-}
