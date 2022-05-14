@@ -51,8 +51,6 @@ html {
 }
 
 body {
-  font-family: $fuente2;
-  font-size: 1.6rem;
   line-height: 2;
 }
 
@@ -63,8 +61,15 @@ h3 {
 }
 h1 {
   color: $azul;
-
   text-transform: uppercase;
+}
+
+.offcanvas-header {
+  background-color: $gris;
+}
+.offcanvas-title {
+  font-size: 4rem;
+  color: $verdecata;
 }
 
 // Importar Boostrap

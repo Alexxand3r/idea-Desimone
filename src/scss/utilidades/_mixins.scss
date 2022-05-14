@@ -1,19 +1,71 @@
 @use "../custom" as *;
 
-@mixin telefono {
-  @media (min-width: $telefono) {
-    @content;
-  }
-}
-
 // mixin degrade imagen fondo.
+
 @mixin bgImage($url, $color) {
   background-image: linear-gradient(
-      transparentize($color, 0.3%) 0%,
-      transparentize($color, 0.3%) 100%
+      transparentize($color, 0.5%) 0%,
+      transparentize($color, 0.5%) 100%
     ),
     url($url);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+}
+
+// mixin degrade
+
+@mixin white-gradient {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+//maps y map-get
+
+$blue: #0033ff;
+$red: #ff0303;
+$yellow: #edff49;
+$green: #33ff00;
+
+$colors: (
+  az: $blue,
+  rj: $red,
+  am: $yellow,
+  vd: $green,
+);
+
+$estilos: (
+  color: $negro,
+  centro: center,
+);
+
+h3 {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: 2rem;
+  color: $azul;
+  font-size: 5rem;
+  border-radius: 20px;
+  margin: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  border: 3px solid $green;
+}
+
+$breakpoints: (
+  nulo: 0,
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  xlarge: 1200px,
+);
+
+@mixin breakpoint($size) {
+  @if map-has-key($breakpoints, $size) {
+    @media (min-width: #{map-get($breakpoints, $size)}) {
+      @content;
+    }
+  }
 }

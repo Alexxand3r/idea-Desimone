@@ -1,0 +1,24 @@
+@use "../custom" as *;
+@use "../utilidades/mixins" as *;
+
+@each $redes in facebookicon, instaicon, iconomail {
+  li.#{$redes} {
+    background: url(../img/#{$redes}.svg);
+  }
+}
+
+.redes {
+  a {
+    display: table;
+    margin: 0 auto;
+  }
+  li {
+    margin-top: 2rem;
+    height: 7rem;
+    width: 7rem;
+    text-indent: -9999999px;
+  }
+  li:hover {
+    opacity: 0.5;
+  }
+}

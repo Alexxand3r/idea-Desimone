@@ -12,8 +12,6 @@ html {
 }
 
 body {
-  font-family: "Mali", cursive;
-  font-size: 1.6rem;
   line-height: 2;
 }
 
@@ -28,6 +26,15 @@ h3,
 h1, .h1 {
   color: #0033ff;
   text-transform: uppercase;
+}
+
+.offcanvas-header {
+  background-color: #eceeef;
+}
+
+.offcanvas-title {
+  font-size: 4rem;
+  color: #33ff00;
 }
 
 /*!
@@ -11153,6 +11160,18 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+h3 {
+  background-color: #000000;
+  text-align: center;
+  padding: 2rem;
+  color: #0033ff;
+  font-size: 5rem;
+  border-radius: 20px;
+  margin: 0.5rem 0.5rem;
+  text-transform: uppercase;
+  border: 3px solid #33ff00;
+}
+
 /* BOTONES */
 .btn1 {
   font-family: "Luckiest Guy", cursive;
@@ -11198,24 +11217,24 @@ button {
   border-radius: 500px;
   border: 1px solid #fff;
   overflow: hidden;
-  background: #edff49;
-  color: #000000;
+  background: #33ff00;
+  color: #fff;
 }
 button:hover {
-  background: #33ff00;
+  color: #000000;
+  background: #edff49;
   box-shadow: 0 0 10px #edff49, 0 0 25px #33ff80, 0 0 50px #33ff00;
   transition-delay: 0.2s;
   border: 1px solid #33ff80;
+}
+button .btn-close {
+  color: #33ff00;
 }
 
 button span {
   position: relative;
   z-index: 10;
   transition: color 0.4s;
-}
-
-button:hover span {
-  color: #fff;
 }
 
 button::before,
@@ -11230,6 +11249,63 @@ button::after {
 
 button:hover::before {
   transform: translate3d(100%, 0, 0);
+}
+
+.btn-hero {
+  color: #000000;
+  background-color: #edff49;
+  border-color: transparent;
+  padding: 1rem 5rem;
+  font-size: calc(1.325rem + 0.9vw);
+  border-radius: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+  transition-delay: 0.2s;
+  border: 1px solid #000000;
+  display: block;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-family: "Luckiest Guy", cursive;
+  letter-spacing: 1px;
+}
+.btn-hero:hover {
+  color: #fff;
+  background-color: #33ff00;
+  border-color: transparent;
+}
+.btn-check:focus + .btn-hero, .btn-hero:focus {
+  color: #fff;
+  background-color: #33ff00;
+  border-color: transparent;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+.btn-check:checked + .btn-hero, .btn-check:active + .btn-hero, .btn-hero:active, .btn-hero.active, .show > .btn-hero.dropdown-toggle {
+  color: #000;
+  background-color: #f1ff6d;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.btn-check:checked + .btn-hero:focus, .btn-check:active + .btn-hero:focus, .btn-hero:active:focus, .btn-hero.active:focus, .show > .btn-hero.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+.btn-hero:disabled, .btn-hero.disabled {
+  color: #000;
+  background-color: #edff49;
+  border-color: transparent;
+}
+@media (min-width: 1200px) {
+  .btn-hero {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .btn-hero {
+    display: inline-block;
+  }
+}
+.btn-hero:hover {
+  box-shadow: 0 0 10px #edff49, 0 0 25px #33ff80, 0 0 50px #33ff00;
+  transition-delay: 0.2s;
+  border: 1px solid #000000;
 }
 
 /* BARRA DE NAVEGACION */
@@ -11281,18 +11357,45 @@ a {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(236, 238, 239, 0.7) 0%, rgba(236, 238, 239, 0.7) 100%), url("../img/negocio-hero.jpg");
+  background-image: linear-gradient(rgba(236, 238, 239, 0.5) 0%, rgba(236, 238, 239, 0.5) 100%), url("../img/negocio1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 }
 .hero .logo_hero {
   max-width: 20rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .hero .logo_hero {
+    margin: 0;
+  }
 }
 .hero .contenido_hero {
   padding-top: 10rem;
   padding-bottom: 10rem;
 }
+@media (min-width: 768px) {
+  .hero .contenido_hero {
+    max-width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .hero .contenido_hero {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    max-width: 40%;
+  }
+}
+.hero .contenido_hero h1 {
+  font-size: 4.5rem;
+}
+@media (min-width: 768px) {
+  .hero .contenido_hero h1 {
+    font-size: 6rem;
+  }
+}
+
 /** footer **/
 .footer {
   border-top: 3px solid #33ff00;
@@ -11393,9 +11496,16 @@ a {
 }
 
 /** OFERTA SEMANAL **/
-.titulo-semanal {
+.titulo {
   font-size: 5rem;
   color: #0033ff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #000000;
+  border-bottom: 2px solid #33ff00;
+  border-top: 2px solid #edff49;
+  padding: 1.5rem;
+  border-radius: 40%;
 }
 
 .card-semanal {
@@ -11479,6 +11589,50 @@ a {
   padding: 1rem;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
 /** novedades **/
 .novedades_titulo {
   font-size: 5.5rem;
@@ -11505,4 +11659,30 @@ a {
   transform: scale(1.03);
   transition: all 0.75s;
   box-shadow: 1px 1px 7px #ff0303, 1px 1px 7px #ff0303, 1px 1px 7px #edff49;
+}
+
+li.facebookicon {
+  background: url(../img/facebookicon.svg);
+}
+
+li.instaicon {
+  background: url(../img/instaicon.svg);
+}
+
+li.iconomail {
+  background: url(../img/iconomail.svg);
+}
+
+.redes a {
+  display: table;
+  margin: 0 auto;
+}
+.redes li {
+  margin-top: 2rem;
+  height: 7rem;
+  width: 7rem;
+  text-indent: -9999999px;
+}
+.redes li:hover {
+  opacity: 0.5;
 }
