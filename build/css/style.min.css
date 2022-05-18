@@ -46,7 +46,7 @@ h1, .h1 {
 
 .offcanvas-title {
   font-size: 4rem;
-  color: #33ff00;
+  color: #0033ff;
 }
 
 /*!
@@ -191,6 +191,10 @@ ul {
 
 ul ul {
   margin-bottom: 0;
+}
+
+b {
+  font-weight: bolder;
 }
 
 a {
@@ -1745,6 +1749,7 @@ a {
 .nosotros-mapa {
   border: 2px solid #33ff00;
   height: 100%;
+  margin-bottom: 4rem;
   padding: 1rem;
 }
 
