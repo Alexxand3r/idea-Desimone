@@ -2,18 +2,30 @@
 
 /** Listado de Productos-principal **/
 
+.ingresos {
+  font-size: 5rem;
+  text-align: center;
+  color: $rojo;
+  border-bottom: 3px solid $rojo;
+  text-transform: uppercase;
+}
 .destacado {
   background-color: $negro;
   text-align: center;
-
-  h2 {
-    font-size: 4.5rem;
-    color: $amarillo;
-    margin-bottom: 1rem;
+  .card-img-top {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
-  h3 {
-    font-size: 3rem;
+  h2 {
+    font-size: 3.5rem;
+    color: $amarillo;
+  }
+  .titulo-destacado {
+    padding: 1rem;
+    font-size: 3.5rem;
     color: $verdecata;
+    border-top: 3px solid $amarillo;
+    border-bottom: 3px solid $verdecata;
   }
   .destacado__descripcion {
     font-size: 1.8rem;
@@ -25,7 +37,7 @@
     color: $verdecata;
     font-weight: bold;
     font-family: $fuente1;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     letter-spacing: 3px;
   }
   .destacado__precio::first-letter {

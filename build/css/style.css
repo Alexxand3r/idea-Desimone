@@ -28,6 +28,18 @@ h1, .h1 {
   text-transform: uppercase;
 }
 
+.titulo {
+  font-size: 5rem;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #eceeef;
+  border-bottom: 3px solid #0033ff;
+  border-top: 3px solid #0033ff;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
 .offcanvas-header {
   background-color: #eceeef;
 }
@@ -11207,7 +11219,7 @@ h3 {
 button {
   outline: none;
   cursor: pointer;
-  padding: 0.1rem 2rem;
+  padding: 0.4rem 2rem;
   font-family: "Luckiest Guy", cursive;
   text-transform: uppercase;
   position: relative;
@@ -11217,15 +11229,15 @@ button {
   border-radius: 500px;
   border: 1px solid #fff;
   overflow: hidden;
-  background: #33ff00;
-  color: #fff;
+  background: #edff49;
+  color: #000000;
 }
 button:hover {
-  color: #000000;
-  background: #edff49;
+  color: #fff;
+  background: #33ff00;
   box-shadow: 0 0 10px #edff49, 0 0 25px #33ff80, 0 0 50px #33ff00;
   transition-delay: 0.2s;
-  border: 1px solid #33ff80;
+  border: 1px solid #000000;
 }
 button .btn-close {
   color: #33ff00;
@@ -11429,10 +11441,10 @@ a {
   }
 }
 .footer-menu a {
+  font-size: 2.5rem;
   font-family: "Mali", cursive;
   color: #edff49;
   text-transform: uppercase;
-  font-size: 2rem;
   display: block;
   text-align: center;
 }
@@ -11447,16 +11459,30 @@ a {
     text-align: left;
   }
 }
+.titulo_categoria {
+  margin-top: 1.8rem;
+  font-size: 4rem;
+  color: #33ff00;
+}
+
 .nav_enlace {
   color: #000000;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   transition-delay: 0.1s;
+}
+
+.icono_footer {
+  background-color: #eceeef;
+  padding: 1.2rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0px -4px 10px #ff0303, 0px 4px 10px #33ff00, -4px 0px 10px #0033ff, 4px 0px 10px #edff49;
 }
 
 .copyright {
   font-size: 1.8rem;
-  margin-top: 5rem;
+  margin-top: 1rem;
   text-align: center;
   color: #edff49;
 }
@@ -11465,18 +11491,32 @@ a {
 }
 
 /** Listado de Productos-principal **/
+.ingresos {
+  font-size: 5rem;
+  text-align: center;
+  color: #ff0303;
+  border-bottom: 3px solid #ff0303;
+  text-transform: uppercase;
+}
+
 .destacado {
   background-color: #000000;
   text-align: center;
 }
-.destacado h2 {
-  font-size: 4.5rem;
-  color: #edff49;
-  margin-bottom: 1rem;
+.destacado .card-img-top {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
-.destacado h3 {
-  font-size: 3rem;
+.destacado h2 {
+  font-size: 3.5rem;
+  color: #edff49;
+}
+.destacado .titulo-destacado {
+  padding: 1rem;
+  font-size: 3.5rem;
   color: #33ff00;
+  border-top: 3px solid #edff49;
+  border-bottom: 3px solid #33ff00;
 }
 .destacado .destacado__descripcion {
   font-size: 1.8rem;
@@ -11487,7 +11527,7 @@ a {
   color: #33ff00;
   font-weight: bold;
   font-family: "Luckiest Guy", cursive;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   letter-spacing: 3px;
 }
 .destacado .destacado__precio::first-letter {
@@ -11496,20 +11536,8 @@ a {
 }
 
 /** OFERTA SEMANAL **/
-.titulo {
-  font-size: 5rem;
-  color: #0033ff;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: #000000;
-  border-bottom: 2px solid #33ff00;
-  border-top: 2px solid #edff49;
-  padding: 1.5rem;
-  border-radius: 40%;
-}
-
 .card-semanal {
-  border: 2px solid #33ff00;
+  border: 3px solid #0033ff;
   border-bottom-right-radius: 3rem;
   background-color: #000000;
 }
@@ -11530,6 +11558,7 @@ a {
 
 .descripcion-semanal {
   color: #edff49;
+  font-family: "Mali", cursive;
 }
 
 .precio-semanal {
@@ -11546,9 +11575,29 @@ a {
 }
 
 .imagen-semanal {
-  border: 2px solid #edff49;
+  border: 3px solid #0033ff;
   border-top-left-radius: 3rem;
   padding: 1rem;
+}
+
+.puesto {
+  padding: 1rem;
+}
+.puesto .puesto_titulo {
+  color: #33ff00;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+}
+.puesto .puesto_img {
+  padding: 0.1rem;
+}
+.puesto .puesto_lista {
+  margin-right: 2.5rem;
+  color: #edff49;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /** jueguetes **/
@@ -11575,15 +11624,20 @@ a {
 /** sobre nosotros pag**/
 .nosotros {
   border: 2px solid #edff49;
-  border-radius: 50px;
+  border-radius: 25px;
   padding: 1rem;
   font-size: 5rem;
   font-family: "Mali", cursive;
 }
 .nosotros .titulo_nosotros {
   color: #0033ff;
-  font-size: 3.5rem;
+  font-size: 4.5rem;
   text-transform: uppercase;
+}
+
+.nosotros_imagen {
+  max-height: 50rem;
+  padding: 0.1rem;
 }
 
 .nosotros-mapa {
@@ -11634,6 +11688,63 @@ a {
 .slider .slide {
   height: 100px;
   width: 250px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.card {
+  margin-left: 0.8rem;
+  text-align: center;
+  border: 3px solid #0033ff;
+  border-radius: 15px;
+  background: #000000;
+  margin-top: 1rem;
+}
+.card .imagen-oferta {
+  padding: 1.2rem;
+}
+.card .descripcion-oferta {
+  margin-right: 8rem;
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+}
+.card li {
+  font-size: 1.3rem;
+}
+
+.btn-hero {
+  margin-top: 0;
+}
+
+.info-card {
+  color: #33ff00;
+  font-family: "Luckiest Guy", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 2rem;
+  letter-spacing: 1px;
+}
+.info-card .titulo-card {
+  font-size: 3.5rem;
+  color: #edff49;
+  text-transform: uppercase;
+}
+.info-card .precio {
+  color: #edff49;
+  text-decoration: line-through;
+  font-size: 2rem;
+  margin-left: 2.5rem;
+  margin-bottom: 0;
+}
+.info-card .precio-alt {
+  text-decoration: none;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
 .icon-cards {
@@ -11830,5 +11941,3 @@ li.iconomail {
 .redes li:hover {
   opacity: 0.5;
 }
-
-/*# sourceMappingURL=style.css.map */

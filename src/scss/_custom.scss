@@ -63,7 +63,17 @@ h1 {
   color: $azul;
   text-transform: uppercase;
 }
-
+.titulo {
+  font-size: 5rem;
+  color: $negro;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $gris;
+  border-bottom: 3px solid $azul;
+  border-top: 3px solid $azul;
+  padding: 2rem;
+  border-radius: 5px;
+}
 .offcanvas-header {
   background-color: $gris;
 }

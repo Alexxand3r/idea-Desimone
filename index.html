@@ -65,16 +65,15 @@
               <a class="nav_enlace" href="nosotros.html">Nosotros</a>
             </li>
             <div>
+              <!--icono sugerencia-->
+              <a class="nav_enlace" data-bs-toggle="modal" data-bs-target="#modal"><img src="build/img/foco-1.svg"
+                  alt="gmail" width="55"></a>
               <!--icono face-->
               <a class="nav_enlace" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
-                  src="build/img/iconface.svg" alt="icono de face" width="45"></a>
+                  src="build/img/iconface.svg" alt="icono de face" width="55"></a>
 
               <!--icono instagram-->
-              <a class="nav_enlace nav-item" href="#"><img src="build/img/instaicon.svg" alt="Instagram" width="45"></a>
-
-              <!--icono sugerencia-->
-              <a class="nav_enlace my-4" data-bs-toggle="modal" data-bs-target="#modal"><img
-                  src="build/img/sugerencia.svg" alt="gmail" width="55"></a>
+              <a class="nav_enlace nav-item" href="#"><img src="build/img/instaicon.svg" alt="Instagram" width="55"></a>
 
               <!-- Modal formulario -->
 
@@ -160,6 +159,23 @@
     </div>
   </nav>
   <!--fin barra navegacion-->
+  <!--Hero-->
+  <section class="hero">
+    <div class="container-xl">
+      <div class="logo_hero">
+        <img class="img-fluid mt-5" src="build/img/shop1.svg" alt="logo WINY">
+      </div>
+      <div class="contenido_hero">
+        <h1 class="text-center text-md-start animate__heartBeat">Explora todos
+          nuestros productos!</h1>
+        <a href="pages/ofertas.html">
+          <button class="ms-5 my-5" type="button">
+            <span>ofertas</span> <img width="50" src="build/img/ofertax.svg" alt="Ofertas">
+          </button>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <!--Comienzo header-->
   <header class="header container-fluid bg-dark">
@@ -186,7 +202,7 @@
 
         <div class="container-fluid my-3 d-flex  justify-content-center">
           <button class="p-2" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
-            <img width="50" src="build/img/suport.svg" alt="suport"><span>Contacto</span>
+            <img width="50" src="build/img/contacto.svg" alt="suport"><span>Contacto</span>
           </button>
         </div>
       </div>
@@ -198,141 +214,91 @@
             placeholder="¿Que buscas?">
         </form>
         <button class="ms-2 d-none d-md-block" type="button">
-          <img width="50" src="build/img/cartlupa.svg" alt="suport"><span>BUSCAR</span>
+          <img width="50" src="build/img/lupacod.svg" alt="suport"><span>BUSCAR</span>
         </button>
       </div>
   </header>
   <!--Fin header-->
 
-  <!--Hero-->
+  <!--Productos Destacados-->
+  <h2 class="titulo mb-5 rounded-pill">Productos Destacados <img src="build/img/destacado.svg" alt="medalla destacado"
+      width="55"></h2>
+  <!--destacados-->
+  <div class="container-xl">
+    <h2 class="ingresos animate__jackIn animate__heartBeat TheBox animate__zoomIn"><img class="me-3"
+        src="build/img/new.svg" alt="venta rapida" width="55">Nuevos ingresos!</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <div class="card destacado">
+          <h2 class=""><img class="mx-3 my-3" src="build/img/ingreso.svg" width="50" alt="carrito ingreso">Nuevo Ingreso
+          </h2>
+          <img class="card-img-top" src="build/img/deadpool-1.jpg" alt="parlantes">
 
-  <section class="hero">
-    <div class="container-xl">
-      <div class="logo_hero">
-        <img class="img-fluid mt-5" src="build/img/winideflogo.svg" alt="logo WINY">
+          <div class="card-body p-2">
+
+            <h2 class="titulo-destacado">Espada Deadpool</h2>
+            <li class="destacado__descripcion">Lorem ipsum dolor</li>
+            <li class="destacado__descripcion">Lorem ipsum dolor</li>
+            <li class="destacado__descripcion">Lorem ipsum dolor</li>
+            <p class="destacado__precio">$2900°°</p>
+            <a href="#" class="btn-hero mb-2"><img class="img-fluid mx-1" src="../build/img/cartagrega.svg"
+                width="50">Agregar</a>
+          </div>
+        </div>
       </div>
-      <div class="contenido_hero">
-        <h1 class="text-center text-md-start animate__heartBeat">Explora todos
-          nuestros productos!</h1>
-        <a href="contacto.html" class="btn-hero">Pag Contacto</a>
+      <div class="col-md-6 mb-4">
+        <div class="card destacado">
+          <h2 class=""><img class="mx-3 my-3" src="build/img/ingreso.svg" width="50" alt="carrito ingreso">Nuevo Ingreso
+          </h2>
+          <img class="card-img-top" src="build/img/consola_1.jpg" alt="juego de video">
 
+          <div class="card-body p-2">
+
+            <h2 class="titulo-destacado">Consola Juegos</h2>
+            <li class="destacado__descripcion">Lorem ipsum dolor</li>
+            <li class="destacado__descripcion">Lorem ipsum dolor</li>
+            <li class="destacado__descripcion">Lorem ipsum dolor</li>
+            <p class="destacado__precio">$2600°°</p>
+            <a href="#" class="btn-hero mb-2"><img class="img-fluid mx-1" src="../build/img/cartagrega.svg"
+                width="50">Agregar</a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+    <!--fin destacados-->
+  </div>
+  <!--fin nuevos ingresos-->
 
-  <!--Caratula/nosotros-->
 
-  <section class="container-xl my-5">
-    <div class="row nosotros">
-      <div class="col-md-6">
-        <p class="fs-3 mt-5 caracteristicas-nosotros">
-          En <span class="fw-bold fs-1">WINY</span>,Somos una empresa familiar con amplia trayectoria
-          comercial,enfocados en adquirir la mayor variedad de
-          productos tales como juguetes,articulos importados,regaleria,ferreteria,entre otros!.</p>
-        <p class="fs-3">Queremos ofrecerte una experiencia pensada en que puedas encontrar:
-        <ul class=" ms-5 fs-2 fw-bold caracteristicas-nosotros">
-          <li>Productos de calidad y con una gran variedad</li>
-          <li>Soluciones en el menor tiempo y al mejor precio.</li>
-          <li>Con atención personalizada y asesoraramiento.</li>
-          <li>Fácil!,sin complicaciones.</li>
-        </ul>
-      </div>
-      <div class="col-md-6 text-center">
+  <!--oferta Semanal-->
 
-        <img class="img-fluid" src="build/img/winideflogo.svg" alt="Imagen nosotros">
-        <h2 class="titulo_nosotros mb-5">Juguetería e importados</h2>
-        <a class="text-center mb-5" href="nosotros.html">
-          <button class="nav-item"> <span> Ver + </span></button>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!--Oferta de la semana-->
-  <h2 class="text-center titulo animate__jackIn animate__heartBeat TheBox animate__zoomIn">OFERTA DE LA SEMANA
-  </h2>
   <section class="container-xl">
-
+    <h2 class="ingresos animate__jackIn animate__heartBeat TheBox animate__zoomIn"><img class="me-3"
+        src="build/img/etiquetadesc.svg" alt="imagen descuento" width="55">OFERTA DE LA SEMANA
+    </h2>
     <div class="row mt-5 ">
       <div class="col-md-6 imagen-semanal">
 
         <div class="text-center">
-          <img class="img-fluid" src="build/img/tiraled-1.jpg" alt="balanza">
+          <img class="img-fluid" src="build/img/family-1.jpg" alt="balanza">
         </div>
       </div>
 
       <div class="col-md-6 card-semanal">
-        <p class="tagline-semanal animate__heartBeat text-center">IMBATIBLE!</p>
-        <h3 class=" producto-semanal text-center">Tira de Luces LED</h3>
+        <p class="tagline-semanal animate__heartBeat text-center">IMBATIBLE!<img class="ms-2" src="build/img/pig.svg"
+            alt="ahorro" width="55"> </p>
+        <h3 class="producto-semanal text-center">Consola Family</h3>
         <ul class="mx-5 my-0 fs-2 fw-bold descripcion-semanal">
-          <li class="ms-5">productos de calidad</li>
-          <li class="ms-5">soluciones en el menor.</li>
-          <li class="ms-5">Con atención personali.</li>
-          <li class="ms-5">fácil!,sin complicaciones.</li>
+          <li class="ms-5">Incluye 2 Joystick's + un Revolver</li>
+          <li class="ms-5">todos los cables incluidos</li>
+          <li class="ms-5">Varios Juegos incorporados</li>
+          <li class="ms-5">Facil conexión</li>
         </ul>
-        <p class="text-center precio-semanal">$ XX00 °°</p>
+        <p class="text-center precio-semanal">$2400°° <img src="build/img/off.svg" alt="imagen descuento" width="55">
+        </p>
         <div class="d-flex justify-content-center mb-3">
-          <a class="" href="">
-            <button class="me-4"> <span>+ info</span></button>
-          </a>
-          <a>
-            <button class=""><span>
-                <?xml version="1.0" encoding="iso-8859-1"?><svg class="icon-svg" width="30" height="30" version="1.1"
-                  id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                  y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <g>
-                        <path
-                          d="M608.126,124.457c-3.239-3.945-8.075-6.233-13.179-6.233H107.539L91.367,34.782c-1.555-8.018-8.577-13.81-16.743-13.81
-                                                                                                              				h-57.57C7.633,20.972,0,28.608,0,38.026s7.633,17.054,17.054,17.054h43.501l73.439,384.296
-                                                                                                              				c1.435,8.155,8.519,14.101,16.796,14.101h60.242c-32.342,5.858-56.956,34.204-56.956,68.21c0,38.233,31.106,69.34,69.34,69.34
-                                                                                                              				c38.233,0,69.336-31.106,69.336-69.34c0-34.005-24.609-62.351-56.953-68.21h221.5c-32.344,5.858-56.959,34.204-56.959,68.21
-                                                                                                              				c0,38.233,31.109,69.34,69.344,69.34c38.233,0,69.339-31.106,69.339-69.34c0-34.005-24.612-62.351-56.953-68.21h51.932
-                                                                                                              				c9.418,0,17.054-7.636,17.054-17.054c0-9.42-7.636-17.054-17.054-17.054H165.109l-5.224-29.721h387.974
-                                                                                                              				c8.142,0,15.144-5.752,16.73-13.736l47.086-237.314C612.667,133.591,611.365,128.403,608.126,124.457z M504.917,521.687
-                                                                                                              				c0,19.426-15.805,35.23-35.23,35.23c-19.428,0-35.236-15.804-35.236-35.23c0-19.426,15.808-35.23,35.236-35.23
-                                                                                                              				C489.112,486.458,504.917,502.26,504.917,521.687z M258.646,521.687c0,19.426-15.802,35.23-35.227,35.23
-                                                                                                              				c-19.428,0-35.233-15.804-35.233-35.23c0-19.426,15.805-35.23,35.233-35.23C242.842,486.458,258.646,502.26,258.646,521.687z
-                                                                                                              				 M153.539,355.539l-23.13-119.328h64.366l19.605,119.328H153.539z M327.099,355.539h-78.154l-19.605-119.328h97.76V355.539z
-                                                                                                              				 M440.591,355.539h-79.384V236.212h96.513L440.591,355.539z M533.857,355.539H475.05l17.13-119.328h65.352L533.857,355.539z
-                                                                                                              				 M564.299,202.104h-440.5l-9.648-49.77h460.025L564.299,202.104z" />
-                      </g>
-                    </g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                </svg>
-              </span>
-            </button>
+          <a href="#" class="btn-hero mb-2"><img class="img-fluid mx-1" src="../build/img/cartagrega.svg"
+              width="50">Agregar</a>
           </a>
         </div>
       </div>
@@ -340,129 +306,119 @@
   </section>
 
   <!--Puestos/Principal-->
-  <h2 class="titulo my-5">Los mas Vendidos!</h2>
-  <main class="container-xl py-5">
 
+  <main class="container-xl py-5">
+    <h2 class="ingresos animate__heartBeat"><img class="me-3" src="build/img/copa.svg" alt="venta rapida" width="55">Los
+      mas Vendidos!<img class="ms-3" src="build/img/podio.svg" alt="venta rapida" width="55"></h2>
     <!--Puesto 1-->
-    <div class="row g-0 pt-5 mb-4">
-      <div class="col-md-6 producto">
-        <img class="img-fluid" src="build/img/guantes-1.jpg" alt="imagen producto">
+    <div class="row mt-5 ">
+      <div class="col-md-6 imagen-semanal">
+
+        <div class="text-center">
+          <img class="img-fluid" src="build/img/squency.jpg" alt="pelotas">
+        </div>
       </div>
-      <div class="col-md-6 bg-dark p-5 text-white d-flex flex-column justify-content-center">
-        <h2 class="text-center mb-3 fs-1">- Puesto n° 1 -</h2>
-        <p class="text-center f-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti sed recusandae
-          vitae architecto
-          molestiae, eos corrupti</p>
-        <p class="fs-1 fw-bold card-text text-center">$XX.00</p>
-        <a class="mx-5 text-center" href="contacto.html">
-          <button class="nav-item"> <span>+info</span></button>
-        </a>
+
+      <div class="col-md-6 card-semanal">
+        <h3 class="producto-semanal mt-5 animate__heartBeat text-center puesto_titulo">squency <img class="ms-3"
+            src="build/img/first.svg" alt="ahorro" width="55"></h3>
+        <ul class="mx-5 my-5 fs-2 fw-bold descripcion-semanal">
+          <li class="ms-5">Se vende por caja cerrada o por unidad</li>
+          <li class="ms-5">Juguete AntiStress</li>
+          <li class="ms-5">Varios Colores</li>
+          <li class="ms-5">No Toxico</li>
+        </ul>
+        <p class="text-center precio-semanal">$220°°</p>
+        <div class="d-flex justify-content-center mb-3">
+          <a class="mt-4" href="contacto.html">
+            <button class="nav-item"><span>+info</span><img class="img-fluid mx-1" src="../build/img/whapph1.svg"
+                width="50">
+            </button>
+          </a>
+        </div>
       </div>
     </div>
-
     <!--puesto 2-->
     <div class="row">
       <div class="col-md-6 mb-4">
-        <div class="card">
-          <img class="card-img-top" src="build/img/lednuevo.jpg" alt="focos led">
-          <div class="card-body text-center bg-dark text-white p-5">
-            <h2>- Puesto n° 2 -</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti sed recusandae vitae architecto
-              molestiae, eos corrupti</p>
-            <p class="fs-1 fw-bold card-text text-center">$XX.00</p>
+        <div class="card puesto">
 
-            <a class="mx-5" href="contacto.html">
-              <button class="nav-item"> <span>+info</span></button>
+          <img class="card-img-top puesto_img" src="build/img/pava.jpg" alt="focos led">
+          <div class="card-body text-center bg-dark text-white p-5">
+
+            <h3 class="puesto_titulo">Pava Electrica</h3>
+            <li class="puesto_lista">aca van descripciones</li>
+            <li class="puesto_lista">aca van descripciones</li>
+            <li class="puesto_lista">aca van descripciones</li>
+
+
+            <p class="text-center precio-semanal">$2000°°</p>
+            <a class="" href="contacto.html">
+              <button class="nav-item"><span>+info</span><img class="img-fluid mx-1" src="../build/img/whapph1.svg"
+                  width="50">
+              </button>
             </a>
           </div>
         </div>
       </div>
       <!--puesto 3-->
       <div class="col-md-6 mb-4">
-        <div class="card">
-          <img class="card-img-top" src="build/img/lednuevo.jpg" alt="parlantes">
+        <div class="card puesto">
+
+          <img class="card-img-top puesto_img" src="build/img/uñas.jpg" alt="parlantes">
 
           <div class="card-body text-center bg-dark text-white p-5">
-            <h2>- Puesto n° 3 -</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam deleniti sed recusandae vitae architecto
-              molestiae, eos corrupti</p>
-            <p class="fs-1 fw-bold card-text">$XX.00</p>
-            <a class="mx-5" href="contacto.html">
-              <button class="nav-item"> <span>+info</span></button>
+            <h3 class="puesto_titulo">Set Uñas</h3>
+            <li class="puesto_lista">aca van descripciones</li>
+            <li class="puesto_lista">aca van descripciones</li>
+            <li class="puesto_lista">aca van descripciones</li>
+
+
+            <p class="text-center precio-semanal">$3100°°</p>
+            <a class="" href="contacto.html">
+              <button class="nav-item"><span>+info</span><img class="img-fluid mx-1" src="../build/img/whapph1.svg"
+                  width="50">
+              </button>
             </a>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <!--destacados-->
 
-  <h2 class="titulo my-5">Destacados</h2>
-  <div class="row">
-    <div class="col-md-4 mb-4">
-      <div class="card destacado">
-        <img class="card-img-top" src="build/img/parlante-1.jpg" alt="parlantes">
+  <!--Caratula/nosotros-->
 
-        <div class="card-body p-5">
-          <h2 class="">En ascenso!</h2>
-          <h3 class="">Parlante Bluetooth</h3>
-          <p class="destacado__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          <p class="destacado__precio">$XX.00</p>
-          <a class="mx-5" href="#">
-            <button class="nav-item"> <span>+info</span></button>
-          </a>
-        </div>
+  <section class="container-xl my-5">
+    <h2 class="titulo rounded-pill mb-3">Quienes somos<img class="ms-3" src="build/img/quienes.svg" alt="venta rapida"
+        width="55"></h2>
+    <div class="row nosotros">
+      <div class="col-md-5">
+        <img class="img-fluid nosotros_imagen" src="build/img/negocio-hero.jpg" alt="imagen local">
       </div>
-    </div>
-    <div class="col-md-4 mb-4">
-      <div class="card destacado">
-        <img class="card-img-top" src="build/img/parlante-1.jpg" alt="parlantes">
-
-        <div class="card-body p-5">
-          <h2 class="">En ascenso!</h2>
-          <h3 class="">Parlante Bluetooth</h3>
-          <p class="destacado__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          <p class="destacado__precio">$XX.00</p>
-          <a class="mx-5" href="#">
-            <button class="nav-item"> <span>+info</span></button>
-          </a>
-        </div>
+      <div class="col-md-7 text-center">
+        <img class="img-fluid" src="build/img/winideflogo.svg" alt="Imagen nosotros">
+        <h2 class="titulo_nosotros mb-5">Juguetería e importadora</h2>
+        <a class="text-center mb-5" href="nosotros.html">
+          <button class="nav-item"><img src="build/img/shop2.svg" alt="imagen tienda" width="55"> <span>Ver
+              +</span></button>
+        </a>
       </div>
+
     </div>
-    <div class="col-md-4 mb-4">
-      <div class="card destacado">
-        <img class="card-img-top" src="build/img/parlante-1.jpg" alt="parlantes">
-
-        <div class="card-body p-5">
-          <h2 class="">En ascenso!</h2>
-          <h3 class="">Parlante Bluetooth</h3>
-          <p class="destacado__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          <p class="destacado__precio">$XX.00</p>
-          <a class="mx-5" href="#">
-            <button class="nav-item"> <span>+info</span></button>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--fin destacados-->
-
-
+  </section>
 
   <!--comienzo Foooter-->
-
   <footer class="site-footer">
     <div class="container-xl mt-5">
       <div class="row">
 
         <!--COLUMNA 1-->
-
         <div class="col-md-4 mb-4 mb-md-0 text-center mt-5">
-          <h3 class="mb-4 text-center">Categorías</h3>
+          <h2 class="titulo_categoria">Categorías</h2>
           <nav class="d-flex flex-column footer-menu align-items-center">
-            <a class="fs-1" href="pages/juguetes.html">Juegueteria</a>
-            <a class="fs-1" href="pages/importados.html">Importados</a>
-            <a class="fs-1" href="pages/ofertas.html">Ofertas</a>
+            <a class="" href="pages/juguetes.html">Juegueteria</a>
+            <a class="" href="pages/importados.html">Importados</a>
+            <a class="" href="pages/ofertas.html">Ofertas</a>
           </nav>
         </div>
 
@@ -495,8 +451,8 @@
 
             <div class="container-fluid my-3 d-flex  justify-content-center">
 
-              <button class="p-2 mt-3" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
-                <img width="40" src="build/img/suport.svg" alt="suport"><span>Contacto</span>
+              <button class="p-2 mt-5" data-bs-toggle="offcanvas" type="button" data-bs-target="#demo10">
+                <img width="40" src="build/img/contacto.svg" alt="suport"><span>Contacto</span>
               </button>
             </div>
 
@@ -509,10 +465,10 @@
               </div>
 
               <div class="offcanvas-body bg-dark">
-                <a class="fs-1 mt-4 ms-4" href="#">Preguntas Frecuentes</a>
-                <a class="fs-1 mt-4 ms-4" href="#"> Seguridad y Confianza</a>
-                <a class="fs-1 mt-4 ms-4" href="#">Política de Privacidad</a>
-                <a class="fs-1 mt-4 ms-4" href="#">Términos del Servicio</a>
+                <a class="fs-2 mt-4 ms-4" href="#">Preguntas Frecuentes</a>
+                <a class="fs-2 mt-4 ms-4" href="#"> Seguridad y Confianza</a>
+                <a class="fs-2 mt-4 ms-4" href="#">Política de Privacidad</a>
+                <a class="fs-2 mt-4 ms-4" href="#">Términos del Servicio</a>
               </div>
             </div>
 
@@ -530,12 +486,13 @@
               <img class="img-fluid" src="build/img/winideflogo.svg" width="450" alt="winy logo">
             </a>
             <div class="d-flex justify-content-center">
-              <a class="nav_enlace" aria-current="page"
+              <a class="nav_enlace icono_footer" aria-current="page"
                 href="https://www.google.com.ar/maps/place/Winy+Jugueter%C3%ADa+e+importados/@-32.8855853,-68.8453077,17z/data=!3m1!4b1!4m5!3m4!1s0x967e091c5c827a03:0x740e18608d18ad25!8m2!3d-32.8855853!4d-68.843119"><img
                   src="build/img/googlemapsicon-com.svg" alt="google maps" width="45"></a>
-              <a class="nav_enlace" href="https://www.facebook.com/christopher.salguero.129" target="_blank"><img
-                  src="build/img/iconface.svg" alt="icono de face" width="45"></a>
-              <a class="nav_enlace" href="#"><img src="build/img/instaicon.svg" alt="Instagram" width="45"></a>
+              <a class="nav_enlace icono_footer" href="https://www.facebook.com/christopher.salguero.129"
+                target="_blank"><img src="build/img/iconface.svg" alt="icono de face" width="45"></a>
+              <a class="nav_enlace icono_footer" href="#"><img src="build/img/instaicon.svg" alt="Instagram"
+                  width="45"></a>
             </div>
 
           </nav>

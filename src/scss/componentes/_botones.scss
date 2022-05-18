@@ -38,7 +38,7 @@
 button {
   outline: none;
   cursor: pointer;
-  padding: 0.1rem 2rem;
+  padding: 0.4rem 2rem;
   font-family: $fuente1;
   text-transform: uppercase;
   position: relative;
@@ -48,14 +48,14 @@ button {
   border-radius: 500px;
   border: 1px solid $blanco;
   overflow: hidden;
-  background: $verdecata;
-  color: $blanco;
+  background: $amarillo;
+  color: $negro;
   &:hover {
-    color: $negro;
-    background: $amarillo;
+    color: $blanco;
+    background: $verdecata;
     box-shadow: 0 0 10px $amarillo, 0 0 25px $verdeagua, 0 0 50px $verdecata;
     transition-delay: 0.2s;
-    border: 1px solid $verdeagua;
+    border: 1px solid $negro;
   }
   .btn-close {
     color: $verdecata;

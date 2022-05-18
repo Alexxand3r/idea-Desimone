@@ -2,20 +2,8 @@
 
 /** OFERTA SEMANAL **/
 
-.titulo {
-  font-size: 5rem;
-  color: $azul;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: $negro;
-  border-bottom: 2px solid $verdecata;
-  border-top: 2px solid $amarillo;
-  padding: 1.5rem;
-  border-radius: 40%;
-}
-
 .card-semanal {
-  border: 2px solid $verdecata;
+  border: 3px solid $azul;
   border-bottom-right-radius: 3rem;
   background-color: $negro;
 }
@@ -34,6 +22,7 @@
 }
 .descripcion-semanal {
   color: $amarillo;
+  font-family: $fuente2;
 }
 .precio-semanal {
   font-family: $fuente1;
@@ -48,7 +37,7 @@
   font-size: $separacion;
 }
 .imagen-semanal {
-  border: 2px solid $amarillo;
+  border: 3px solid $azul;
   border-top-left-radius: 3rem;
   padding: 1rem;
 }
